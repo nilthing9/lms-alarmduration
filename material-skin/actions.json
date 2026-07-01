@@ -1,0 +1,12 @@
+{
+  "allplayers": [
+    {
+      "title": "Alarm Duration & Volume",
+      "iframe": "/plugins/AlarmDuration/settings/basic.html?player=$ID",
+      "icon": "alarm",
+      "toolbar": {
+        "title": "Alarm Duration & Volume"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+PLUGIN_ALARMDURATION
+	EN	Alarm Duration
+
+PLUGIN_ALARMDURATION_DESC
+	EN	Set an individual play duration and volume for each alarm. Duration overrides the global sleep timer when that alarm fires. Volume is restored to its previous level when the player stops.
+
+PLUGIN_ALARMDURATION_PLAYER
+	EN	Player
+
+PLUGIN_ALARMDURATION_ALARM_TIME
+	EN	Time
+
+PLUGIN_ALARMDURATION_ALARM_DAYS
+	EN	Days
+
+PLUGIN_ALARMDURATION_ALARM_ENABLED
+	EN	Enabled
+
+PLUGIN_ALARMDURATION_DURATION
+	EN	Duration (mins)
+
+PLUGIN_ALARMDURATION_VOLUME
+	EN	Volume
+
+PLUGIN_ALARMDURATION_NO_ALARMS
+	EN	No alarms configured for this player yet. Set up alarms first via the player settings.
+
+PLUGIN_ALARMDURATION_SAVE
+	EN	Save Settings

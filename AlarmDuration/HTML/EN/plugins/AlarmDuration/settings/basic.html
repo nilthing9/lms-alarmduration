@@ -1,0 +1,37 @@
+[% PROCESS settings/header.html %]
+
+<h2>Alarm Duration Settings</h2>
+<p>Player: [% playerName %]</p>
+
+[% IF alarms.size %]
+
+[% FOREACH alarm IN alarms %]
+[% WRAPPER setting title=alarm.time desc=alarm.days %]
+<table>
+<tr>
+    <td>Duration (mins):</td>
+    <td><input type="number" name="duration_[% alarm.id %]" value="[% alarm.duration %]" min="0" max="480" placeholder="mins"></td>
+</tr>
+<tr>
+    <td>Volume:</td>
+    <td>
+        <input type="range" name="volume_[% alarm.id %]" value="[% alarm.volume %]" min="0" max="100" step="5"
+               oninput="this.nextElementSibling.textContent = this.value + '%'">
+        <span>[% alarm.volume %]%</span>
+    </td>
+</tr>
+</table>
+[% END %]
+[% END %]
+
+[% WRAPPER setting title="" desc="" %]
+<input type="submit" value="Save Settings" class="stdclick">
+[% END %]
+
+[% ELSE %]
+[% WRAPPER setting title="No Alarms" desc="" %]
+No alarms configured for this player yet. Set up alarms first via the player settings.
+[% END %]
+[% END %]
+
+[% PROCESS settings/footer.html %]

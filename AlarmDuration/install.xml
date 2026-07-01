@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<extension>
+    <name>PLUGIN_ALARMDURATION</name>
+    <module>Plugins::AlarmDuration::Plugin</module>
+    <version>1.0.0</version>
+    <description>PLUGIN_ALARMDURATION_DESC</description>
+    <creator>Chris</creator>
+    <defaultState>enabled</defaultState>
+    <targetApplication>
+        <id>SlimServer</id>
+        <minVersion>8.0</minVersion>
+        <maxVersion>*</maxVersion>
+    </targetApplication>
+</extension>
