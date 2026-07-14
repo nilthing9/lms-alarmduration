@@ -77,6 +77,7 @@ sub alarmFired {
 sub _powerOffPlayer {
     my $client = shift;
     $log->info("AlarmDuration: alarm duration elapsed - powering off player");
+    Slim::Control::Request::executeRequest($client, ['pause', '1']);
     Slim::Control::Request::executeRequest($client, ['power', '0']);
 }
 
